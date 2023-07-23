@@ -27,7 +27,7 @@
   ],
 
   "depends": {
-    "fabricloader": ">=0.14.6",
-    "java": ">=17"
+    "fabricloader": ">=${fabricloaderversion}",
+    "minecraft": "~${mcversion}"
   }
 }

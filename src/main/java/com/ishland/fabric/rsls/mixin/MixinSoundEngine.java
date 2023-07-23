@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public class MixinSoundEngine {
 
     @Dynamic
-    @ModifyConstant(method = {"init", "method_19661"}, constant = @Constant(intValue = 255))
+    @ModifyConstant(method = "init", constant = @Constant(intValue = 255))
     private int modifyMaxSource(int constant) {
         if (constant == 255) {
             return Integer.MAX_VALUE;
